@@ -19,7 +19,8 @@ export default {
         'Radio',
         'Popup',
         'Scroller',
-        'Tooltip'
+        'Tooltip',
+        'Swipe'
       ]
     }
   }

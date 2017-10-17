@@ -11,6 +11,7 @@ import Radio from '../components/Radio.vue'
 import Popup from '../components/Popup.vue'
 import Scroller from '../components/Scroller.vue'
 import Tooltip from '../components/Tooltip.vue'
+import Swipe from '../components/Swipe.vue'
 Vue.use(Router)
 export default new Router({
   linkActiveClass: 'current',
@@ -74,6 +75,11 @@ export default new Router({
       path: '/tooltip',
       name: 'Tooltip',
       component: Tooltip
+    },
+    {
+      path: '/swipe',
+      name: 'Swipe',
+      component: Swipe
     }
   ]
 })

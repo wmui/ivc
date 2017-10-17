@@ -39,7 +39,7 @@
         <template v-if="isNoLoad && contentOverflow">
           <p class="ivc-scroller-text">{{noDataText}}</p>
         </template>
-        <template v-else-if="isShowLoadingState">
+        <template v-else-if="showLoadingState">
           <div class="ivc-scroller-infinite-load" v-show="infiniteLoadingState !== 1">
             <p class="ivc-scroller-text">{{loadText}}</p>
           </div>
@@ -107,7 +107,7 @@ export default {
     return {
       isNoRefresh: false,
       isNoLoad: false,
-      isShowLoadingState: true,
+      showLoadingState: true,
       pullToRefreshFlag: false,
       noDataLoadLocker: false,
       mousedown: false,
@@ -312,10 +312,10 @@ export default {
       let contentHeight = this.$slotTarget.getBoundingClientRect().height
 
       if (this.containerHeight + transformY > contentHeight) {
-        this.isShowLoadingState = false
+        this.showLoadingState = false
         this.scroller.scrollTo(0, contentHeight - this.containerHeight + this.tipHeight, true)
         setTimeout(() => {
-          this.isShowLoadingState = true
+          this.showLoadingState = true
         }, this.animationDuration)
       }
     }

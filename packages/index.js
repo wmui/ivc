@@ -8,6 +8,8 @@ import Radio from './radio/index.vue'
 import Popup from './popup/index.vue'
 import Scroller from './scroller/index.vue'
 import Tooltip from './tooltip/index.vue'
+import Swipe from './swipe/index.vue'
+
 const version = '0.0.1'
 const components = [
   Header,
@@ -19,12 +21,12 @@ const components = [
   Radio,
   Popup,
   Scroller,
-  Tooltip
+  Tooltip,
+  Swipe
 ]
 
 const install = function (Vue) {
   if (install.installed) return
-
   components.forEach(component => {
     Vue.component(component.name, component)
   })
@@ -46,7 +48,8 @@ export {
   Radio,
   Popup,
   Scroller,
-  Tooltip
+  Tooltip,
+  Swipe
 }
 
 export default {
