@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'ivciconfont';
+  src: url('./fonts/ivciconfont.woff') format('woff'), /* chrome, firefox */
+    url('./fonts/ivciconfont.ttf') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ivc-icon-"],
+[class*="ivc-icon-"] {
+  font-family:"ivciconfont" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ivc-icon-roundclose:before { content: "\e659"; }
+
+.ivc-icon-search:before { content: "\e65c"; }
+
+.ivc-icon-refresh:before { content: "\e6a4"; }
+
+.ivc-icon-sort:before { content: "\e700"; }
+
+.ivc-icon-people:before { content: "\e736"; }
+
+.ivc-icon-no:before { content: "\e641"; }
+
+.ivc-icon-up2:before { content: "\e64a"; }
+
+.ivc-icon-down2:before { content: "\e65b"; }
+
+.ivc-icon-down:before { content: "\e65d"; }
+
+.ivc-icon-up:before { content: "\e65e"; }
+
+.ivc-icon-right:before { content: "\e65f"; }
+
+.ivc-icon-left:before { content: "\e660"; }
+
+.ivc-icon-yes:before { content: "\e664"; }
+
+.ivc-icon-check:before { content: "\e77f"; }
+
+.ivc-icon-check-small:before { content: "\e687"; }
+

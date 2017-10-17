@@ -1,0 +1,59 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size:62.5%;
+  height: 100%;
+}
+body {
+  background-color: #eee;
+  position: relative;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+#app {
+  height: 100%;
+}
+a,
+input,
+button,
+textarea {
+  &:focus {
+    outline: none;
+  }
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
